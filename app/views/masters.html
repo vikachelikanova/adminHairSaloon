@@ -1,0 +1,28 @@
+<table border="1" width="100%">
+    <tr>
+        <td>Фото</td>
+        <td>Имя</td>
+        <td>Фамилия</td>
+        <td>Телефон</td>
+        <td>Номер договора</td>
+        <td>Специализация</td>
+        <td>Разряд</td>
+        <td>ЗП</td>
+        <td>Действие</td>
+    </tr>
+    <tr ng-repeat="master in masters">
+        <td>{{master.photo}}</td>
+        <td>{{master.name}}</td>
+        <td>{{master.surname}}</td>
+        <td>{{master.phone}}</td>
+        <td>{{master.contractNumber}}</td>
+        <td>{{master.specialization}}</td>
+        <td>{{master.discharge}}</td>
+        <td>{{master.salary}}</td>
+        <td>  
+            <md-button class="md-raised md-primary">Изменить</md-button>
+            <md-button class="md-raised md-warn">Удалить</md-button>            
+        </td>
+    </tr>
+</table>
+<md-button class="md-raised">Добавить нового мастера</md-button>
